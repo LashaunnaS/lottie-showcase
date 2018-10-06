@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
-import 'semantic-ui-css/semantic.min.css';
+import { injectGlobal } from 'styled-components';
 
-const Hello = () => <h1>Hello, world!</h1>;
+import Header from './Header';
+import Footer from './Footer';
 
-ReactDOM.render(<Hello />, document.getElementById('root'));
+// eslint-disable-next-line
+injectGlobal`
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+`;
+
+const App = () => (
+  <Fragment>
+    <Header />
+    <Footer />
+  </Fragment>
+);
+
+ReactDOM.render(<App />, document.getElementById('root'));
