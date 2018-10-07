@@ -11,10 +11,12 @@ const Grid = styled.div`
 `;
 
 const Title = styled.h1`
+  font-family: 'Work Sans', sans-serif;
   color: #fbfbfb;
   display: flex;
   justify-self: center;
   align-self: center;
+  font-size: 1.25 rem;
 `;
 
 const Navigation = styled.nav`
@@ -25,6 +27,7 @@ const Navigation = styled.nav`
 `;
 
 const NavigationItem = styled.p`
+  font-family: 'Roboto', sans-serif;
   color: #252525;
   font-size: 1.25rem;
 `;

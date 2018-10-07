@@ -7,6 +7,7 @@ import Footer from './Footer';
 
 // eslint-disable-next-line
 injectGlobal`
+  @import url('https://fonts.googleapis.com/css?family=Roboto|Work+Sans');
   body, html {
     height: 100%;
     margin: 0;
